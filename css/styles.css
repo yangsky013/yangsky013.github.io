@@ -7679,6 +7679,7 @@ textarea.form-control-lg {
 
 .div-center {
   margin: auto;
+  left: 50%;
 }
 
 .text-decoration-none {

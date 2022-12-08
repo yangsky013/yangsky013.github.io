@@ -7681,6 +7681,7 @@ textarea.form-control-lg {
   display : flex;
   justify-content: center;
   align-items : center;
+  flex-direction : column;
 }
 
 .text-decoration-none {

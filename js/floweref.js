@@ -4,7 +4,7 @@
     var ctx;
     var W;
     var H;
-    var mp = 150; //max particles
+    var mp = 50; //max particles
     var particles = [];
     var angle = 0;
     var tiltAngle = 0;
@@ -37,7 +37,7 @@
 
     function confettiParticle(color) {
         this.x = Math.random() * W; // x-coordinate
-        this.y = (Math.random() * H) - H; //y-coordinate
+        this.y = ((Math.random() * H) - H)*0.5; //y-coordinate
         this.r = RandomFromTo(10, 12); //radius;
         this.d = (Math.random() * mp) + 10; //density;
         this.color = color;

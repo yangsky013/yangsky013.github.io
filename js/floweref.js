@@ -17,7 +17,8 @@
     // objects
 
     var particleColors = {
-        colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"],
+//         colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"],
+        colorOptions: ["Gold", "Khaki", "DarkKhaki"]
         colorIndex: 0,
         colorIncrementer: 0,
         colorThreshold: 10,
@@ -37,7 +38,7 @@
     function confettiParticle(color) {
         this.x = Math.random() * W; // x-coordinate
         this.y = (Math.random() * H) - H; //y-coordinate
-        this.r = RandomFromTo(10, 15); //radius;
+        this.r = RandomFromTo(10, 12); //radius;
         this.d = (Math.random() * mp) + 10; //density;
         this.color = color;
         this.tilt = Math.floor(Math.random() * 10) - 10;

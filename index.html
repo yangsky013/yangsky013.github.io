@@ -33,7 +33,14 @@
         <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>
         <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
         <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-
+        
+<!--    <!-- 꽃가루 -->
+        <script src="js/floweref.js"></script>
+           
+        <div style ="display:none;">
+            <button class="canvasBtn" id="stopButton"></button>
+            <button class="canvasBtn" id="startButton"></button>
+        </div>
     </head>
     <body id="page-top" class="u-body u-xl-mode" data-lang="en" oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
         <!-- Navigation-->
@@ -288,5 +295,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
+        <!-- 꽃가루 설정 -->
+        <style>
+            canvas {z-index:10;
+                    pointer-events:none;
+                    position:fixed;
+                    top: 0;
+                    transform: scale(1.1);}
+        </style>
+        
+        <canvas id="canvas"></canvas>
+            
+        <script>
+            window.onload=function(){
+                $("#startButton).trigger("click");
+                  }
     </body>
 </html>

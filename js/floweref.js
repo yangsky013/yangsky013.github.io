@@ -4,7 +4,7 @@
     var ctx;
     var W;
     var H;
-    var mp = 50; //max particles
+    var mp = 30; //max particles
     var particles = [];
     var angle = 0;
     var tiltAngle = 0;
@@ -122,7 +122,7 @@
             if (animationComplete) return;
 
             if (!confettiActive && particle.y < -15) {
-                particle.y = H + 100;
+                particle.y = H + 50;
                 continue;
             }
 

@@ -37,8 +37,8 @@
 
     function confettiParticle(color) {
         this.x = Math.random() * W; // x-coordinate
-        this.y = ((Math.random() * H) - H)*0.5; //y-coordinate
-        this.r = RandomFromTo(10, 12); //radius;
+        this.y = ((Math.random() * H) - H); //y-coordinate
+        this.r = RandomFromTo(8, 10); //radius;
         this.d = (Math.random() * mp) + 10; //density;
         this.color = color;
         this.tilt = Math.floor(Math.random() * 10) - 10;
@@ -47,7 +47,7 @@
 
         this.draw = function () {
             ctx.beginPath();
-            ctx.lineWidth = this.r / 2;
+            ctx.lineWidth = this.r;
             ctx.strokeStyle = this.color;
             ctx.moveTo(this.x + this.tilt + (this.r / 4), this.y);
             ctx.lineTo(this.x + this.tilt, this.y + this.tilt + (this.r / 4));

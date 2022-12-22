@@ -11428,7 +11428,7 @@ section.masthead h1, section.masthead .h1 {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-top: 4.5rem;
+    padding-top: 5rem;
     padding-bottom: 0;
   }
   header.masthead p {
@@ -11440,7 +11440,8 @@ section.masthead h1, section.masthead .h1 {
   section.masthead {
     height: 100vh;
     min-height: 40rem;
-    padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 5rem;
   }
   section.masthead p {
     font-size: 1.15rem;

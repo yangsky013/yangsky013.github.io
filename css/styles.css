@@ -7677,11 +7677,18 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
-.div-center {
+.div-center-top {
   display : flex;
   justify-content: center;
-  align-items : center;
-  flex-direction : column;
+  align-items : flex-end;
+  flex-direction : row;
+}
+
+.div-center-bottom {
+  display : flex;
+  justify-content: center;
+  align-items : flex-start;
+  flex-direction : row;
 }
 
 .text-decoration-none {

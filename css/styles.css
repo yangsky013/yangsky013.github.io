@@ -11418,7 +11418,7 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  min-height: 40rem;
+/*   min-height: 40rem; */
 }
 section.masthead {
   padding-bottom: 15%;

@@ -39,7 +39,7 @@
     function confettiParticle(color) {
         this.x = Math.random() * W; // x-coordinate
         this.y = ((Math.random() * H) - H); //y-coordinate
-        this.r = RandomFromTo(5, 7); //radius;
+        this.r = RandomFromTo(7, 9); //radius;
         this.d = (Math.random() * mp) + 10; //density;
         this.color = color;
         this.tilt = Math.floor(Math.random() * 10) - 10;
@@ -123,7 +123,7 @@
             if (animationComplete) return;
 
             if (!confettiActive && particle.y < -15) {
-                particle.y = H + 50;
+                particle.y = H + 40;
                 continue;
             }
 

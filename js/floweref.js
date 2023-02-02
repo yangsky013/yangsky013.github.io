@@ -18,7 +18,7 @@
 
     var particleColors = {
 //         colorOptions: ["DodgerBlue", "OliveDrab", "Gold", "pink", "SlateBlue", "lightblue", "Violet", "PaleGreen", "SteelBlue", "SandyBrown", "Chocolate", "Crimson"],
-        colorOptions: ["DarkSeaGreen", "LightGoldenRodYellow", "Ivory"],
+        colorOptions: ["DarkKhaki", "LightGoldenRodYellow", "Ivory"],
 //         colorOptions: ["#f7ce6b", "#c69325", "#f6d992"],
         colorIndex: 0,
         colorIncrementer: 0,

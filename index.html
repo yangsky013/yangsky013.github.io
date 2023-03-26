@@ -263,19 +263,33 @@
                     <div class="col-lg-8 text-center">
                         <h3 class="mt-0">마음 전하실 곳</h3>
                         <hr class="divider my-4" />
-                        <button>Show/Hide/Toggle</button>
-                        <div style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
+                        <div id="toggle1">Show/Hide/Toggle</div>
+                        <div id="toggled1" style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
                         elit. Modi optio sint soluta nesciunt laboriosam eaque dicta <br>
                         repellat quis tempore debitis eos explicabo cumque molestiae <br>
                         provident dignissimos suscipit sapiente! Dicta odio?</div>
                         <script>
-                        $(function() { 
-                            $("div").hide(); // == display:none; 	기본값 : 500ms == "normal"
-                            $("button").click(function(event) {
-                                //$("div").slideDown();
-                                $("div").slideToggle();
+                            $(function() { 
+                                $("#toggled1").hide(); // == display:none; 	기본값 : 500ms == "normal"
+                                $("#toggle1").click(function(event) {
+                                    //$("toggled2").slideDown();
+                                    $("toggled1").slideToggle();
+                                });
                             });
-                        });
+                        </script>
+                        <div id="toggle2">Show/Hide/Toggle</div>
+                        <div id="toggled2" style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
+                        elit. Modi optio sint soluta nesciunt laboriosam eaque dicta <br>
+                        repellat quis tempore debitis eos explicabo cumque molestiae <br>
+                        provident dignissimos suscipit sapiente! Dicta odio?</div>
+                        <script>
+                            $(function() { 
+                                $("toggled2").hide(); // == display:none; 	기본값 : 500ms == "normal"
+                                $("toggle2").click(function(event) {
+                                    //$("toggled2").slideDown();
+                                    $("toggled2").slideToggle();
+                                });
+                            });
                         </script>
                     </div>
                 </div>

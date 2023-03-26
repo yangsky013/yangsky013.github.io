@@ -263,10 +263,23 @@
                     <div class="col-lg-8 text-center">
                         <h3 class="mt-0">마음 전하실 곳</h3>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">구조를 조금 바꾸려면<br />어떻게 할지 고민해보자</p>
+                        <button>Show/Hide/Toggle</button>
+                        <div style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
+                        elit. Modi optio sint soluta nesciunt laboriosam eaque dicta <br>
+                        repellat quis tempore debitis eos explicabo cumque molestiae <br>
+                        provident dignissimos suscipit sapiente! Dicta odio?</div>
+                        <script>
+                        $(function() { 
+                            $("div").hide(); // == display:none; 	기본값 : 500ms == "normal"
+                            $("button").click(function(event) {
+                                //$("div").slideDown();
+                                $("div").slideToggle();
+                            });
+                        });
+                        </script>
                     </div>
                 </div>
-                <div class="row">
+<!--                 <div class="row">
                     <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
                         <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
                         <div>+82 (010) 1234-5678</div>
@@ -275,7 +288,7 @@
                         <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
                         ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:sample@gmail.com">sample@gmail.com</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- Footer-->

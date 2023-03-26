@@ -266,34 +266,29 @@
                     <div class="col-lg-8 text-center">
                         <h3 class="mt-0">마음 전하실 곳</h3>
                         <hr class="divider my-4" />
-                        <button id="toggle1">Show/Hide/Toggle</button>
-                        <div id="toggled1" style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
-                        elit. Modi optio sint soluta nesciunt laboriosam eaque dicta <br>
-                        repellat quis tempore debitis eos explicabo cumque molestiae <br>
-                        provident dignissimos suscipit sapiente! Dicta odio?</div>
                         <script>
-                            $(function() { 
-                                $("#toggled1").hide(); // == display:none; 	기본값 : 500ms == "normal"
-                                $("#toggle1").click(function() {
-                                    //$("toggled2").slideDown();
-                                    $("toggled1").slideToggle();
-                                });
-                            });
+                            for(i = 1 ; i <= 3 ; i++){
+                              $('#box0'+i).click(function(){
+                                $(this).find('.cont').toggle();
+                              });
+                            }
                         </script>
-                        <button id="toggle2">Show/Hide/Toggle</button>
-                        <div id="toggled2" style="border:1px solid gray; padding: 5px;">Lorem ipsum dolor sit amet, consectetur adipisicing <br>
-                        elit. Modi optio sint soluta nesciunt laboriosam eaque dicta <br>
-                        repellat quis tempore debitis eos explicabo cumque molestiae <br>
-                        provident dignissimos suscipit sapiente! Dicta odio?</div>
-                        <script>
-                            $(function() { 
-                                $("toggled2").hide(); // == display:none; 	기본값 : 500ms == "normal"
-                                $("toggle2").click(function() {
-                                    //$("toggled2").slideDown();
-                                    $("toggled2").slideToggle();
-                                });
-                            });
-                        </script>
+                        <div id="box01" class="box" style="width:300px;padding:10px">
+                            <div class="btn" style="width:100%;height:50px;margin:10px;background:powderblue">
+                                제목 1 
+                            </div>
+                            <div class="cont" style="width:100%;height:100px;margin:10px;background:tomato;display:none">
+                                내용 2
+                            </div>
+                        </div>
+                        <div id="box02" class="box" style="width:300px;padding:10px">
+                            <div class="btn" style="width:100%;height:50px;margin:10px;background:powderblue">
+                                제목 2
+                            </div>
+                            <div class="cont" style="width:100%;height:100px;margin:10px;background:tomato;display:none">
+                                내용 2
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -397,32 +397,30 @@
                                 <b>신랑측 계좌번호</b>
                             </div>
                         </div>
-                        <div id="inbox" class="inbox" style="max-width:100%; margin-left:1rem; margin-right:1rem">
-                            <div class="cont" style="width:100%;margin:3px;background:rgb(249, 246, 240);display:none; text-align:left; padding:10px;font-size:0.85rem; color:#696969">
-                                <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">
-                                    양하늘
-                                    <br />
-                                    계좌번호
-                                </div>
-                                <div class="cont_t" style="width:15%; height:50%; text-align:center; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
-                                    복사하기
-                                </div>
-                                <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">
-                                    양근원
-                                    <br />
-                                    계좌번호
-                                </div>
-                                <div class="cont_t" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
-                                    복사하기
-                                </div>
-                                <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">                            
-                                    이현주
-                                    <br />
-                                    계좌번호
-                                </div>
-                                <div class="cont_t" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
-                                    복사하기
-                                </div>
+                        <div id="cont01" style="width:100%;margin:3px;background:rgb(249, 246, 240);display:none; text-align:left; padding:10px;font-size:0.85rem; color:#696969">
+                            <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">
+                                양하늘
+                                <br />
+                                계좌번호
+                            </div>
+                            <div class="cont_t" style="width:15%; height:50%; text-align:center; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
+                                복사하기
+                            </div>
+                            <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">
+                                양근원
+                                <br />
+                                계좌번호
+                            </div>
+                            <div class="cont_t" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
+                                복사하기
+                            </div>
+                            <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">                            
+                                이현주
+                                <br />
+                                계좌번호
+                            </div>
+                            <div class="cont_t" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; display:inline-block; background-color:#bfa08e;border-radius: 10%">
+                                복사하기
                             </div>
                         </div>
                         <div id="box02" class="box" style="max-width:100%; margin-left:1rem; margin-right:1rem">
@@ -430,7 +428,7 @@
                                 <b>신부측 계좌번호</b>
                             </div>
                         </div>
-                        <div class="cont" style="width:100%;margin:3px;background:rgb(249, 246, 240);display:none; text-align:left; padding:10px;font-size:0.85rem; color:#696969">
+                        <div id="cont02" style="width:100%;margin:3px;background:rgb(249, 246, 240);display:none; text-align:left; padding:10px;font-size:0.85rem; color:#696969">
                             <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">    
                                 김예은
                                 <br />
@@ -459,7 +457,7 @@
                         <script type="text/javascript">
                             for(i = 1 ; i <= 2 ; i++){
                               $('#box0'+i).click(function(){
-                                $(this).find('.cont').slideToggle();
+                                $('#cont0'+i).slideToggle();
                               });
                             }
                         </script>

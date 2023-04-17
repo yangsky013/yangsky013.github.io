@@ -465,38 +465,62 @@
                         <script type="text/javascript">
                             function ctc_h1() {
                                 var content = document.getElementById("hn1");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                             function ctc_h2() {
                                 var content = document.getElementById("hn2");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                             function ctc_h3() {
                                 var content = document.getElementById("hn3");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                             function ctc_y1() {
                                 var content = document.getElementById("ye1");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                             function ctc_y2() {
                                 var content = document.getElementById("ye2");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                             function ctc_y3() {
                                 var content = document.getElementById("ye3");
-                                content.select();
+                                const textArea = document.createElement('textarea');
+                                document.body.appendChild(textArea);
+                                textArea.value = content;
+                                textArea.select();
                                 document.execCommand('copy');
+                                document.body.removeChild(textArea);
                                 alert("복사되었습니다.");
                             }
                         </script>

@@ -404,7 +404,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; height:50%; text-align:center; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0;display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_h1()" style="width:4rem; height:50%; text-align:center; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0;display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                                 <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">
@@ -412,7 +412,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_h2()" style="width:4rem; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                                 <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">                            
@@ -420,7 +420,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_h3()" style="width:4rem; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                             </div>
@@ -437,7 +437,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_y1()" style="width:4rem; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                                 <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">    
@@ -445,7 +445,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_y2()" style="width:4rem; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                                 <div class="cont_t" style="width:80%; text-align:left; padding: 10px 10px 5px 10px; font-size:0.85rem;color:#696969; display:inline-block;">                                 
@@ -453,7 +453,7 @@
                                     <br />
                                     계좌번호
                                 </div>
-                                <div class="cont_b" style="width:15%; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
+                                <div class="cont_b" onclick="ctc_y3()" style="width:4rem; text-align:center; height:50%; font-size:0.7rem;color:#f6f1e6; padding : 3px; margin: 0 0 3px 0; display:inline-block; background-color:#bfa08e;border-radius: 5px;">
                                     복사하기
                                 </div>
                             </div>
@@ -467,6 +467,44 @@
                                     $(".cont02").slideToggle();
                                 });
                             });
+                        </script>
+                        <script type="text/javascript">
+                            function ctc_h1() {
+                                var content = "하늘 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
+                            function ctc_h2() {
+                                var content = "근원 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
+                            function ctc_h3() {
+                                var content = "현주 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
+                            function ctc_y1() {
+                                var content = "예은 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
+                            function ctc_y2() {
+                                var content = "하늘 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
+                            function ctc_y3() {
+                                var content = "은자 계좌번호";
+                                content.select();
+                                document.execCommand('copy');
+                                alert("복사되었습니다.");
+                            }
                         </script>
                     </div>
                 </div>

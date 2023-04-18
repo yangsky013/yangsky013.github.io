@@ -8443,7 +8443,7 @@
                   var f = "pswp__img pswp__img--placeholder";
                   f += o.msrc.replace("thumbnails", "fullsize") ? "" : " pswp__img--placeholder--blank";
                   var placeholder = i.createEl(f, o.msrc.replace("thumbnails", "fullsize") ? "img" : "");
-                  if (o.msrc) placeholder.src = o.msrc.replace("thumbnails", "fullsize");
+                  if (o.msrc.replace("thumbnails", "fullsize")) placeholder.src = o.msrc.replace("thumbnails", "fullsize");
                   Ei(o, placeholder),
                     u.appendChild(placeholder),
                     (o.placeholder = placeholder);
@@ -8461,7 +8461,7 @@
                   else Si(index, o, u, o.img, true, true);
               } else if (o.src && !o.loadError)
                 ((a = i.createEl("pswp__img", "img")).style.opacity = 1),
-                  (a.src = o.src),
+                  (a.src = o.src.replace("thumbnails", "fullsize")),
                   Ei(o, a),
                   Si(index, o, u, a, true);
               if (!mi && index === h) (_e = u.style), ci(o, a || o.img);

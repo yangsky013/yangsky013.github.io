@@ -8296,7 +8296,7 @@
               (e.onerror = function () {
                 (t.loadError = true), n();
               }),
-              (e.src = t.src),
+              (e.src = t.src.replace("thumbnails", "fullsize")),
               e
             );
           },

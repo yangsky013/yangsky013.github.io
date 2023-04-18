@@ -8441,9 +8441,9 @@
                   i.features.transform)
                 ) {
                   var f = "pswp__img pswp__img--placeholder";
-                  f += o.msrc ? "" : " pswp__img--placeholder--blank";
-                  var placeholder = i.createEl(f, o.msrc ? "img" : "");
-                  if (o.msrc) placeholder.src = o.msrc;
+                  f += o.msrc.replace("thumbnails", "fullsize") ? "" : " pswp__img--placeholder--blank";
+                  var placeholder = i.createEl(f, o.msrc.replace("thumbnails", "fullsize") ? "img" : "");
+                  if (o.msrc) placeholder.src = o.msrc.replace("thumbnails", "fullsize");
                   Ei(o, placeholder),
                     u.appendChild(placeholder),
                     (o.placeholder = placeholder);

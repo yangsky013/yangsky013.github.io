@@ -689,6 +689,31 @@
                 </div>
             </div>
         </section>
+        <!-- D-Day Timer -->
+        <div style="background-color:#f6f1e6; padding:3rem 0 3rem 0;">
+            <h2 id="remain-time"></h2>
+        </div>
+        <script type="text/javascript">
+            function diffDay() {
+                const masTime = new Date("2023-5-27");
+                const todayTime = new Date();
+                const diff = masTime - todayTime;
+
+                const diffDay = Math.floor(diff / (1000*60*60*24));
+                
+                if (diffDay>0) {
+                    remainTime.innerText = `결혼식이 ${diffDay}일 남았습니다.`;
+                } else if (diffDay=0) {
+                    remainTime.innerText = `결혼식 당일입니다. 함께 해서 축복해 주세요.`;
+                } else {
+                    const diffDay_2 = -diffDay;
+                    remainTime.innerText = `결혼식이 ${diffDay_2}일 지났습니다.`;
+                }
+            }
+            
+            diffDay();
+            setInterval(diffDay, 1000);
+        </script>
         <!-- Footer-->
         <footer style="background-color:#f6f1e6; padding:3rem 0 3rem 0;">
             <div class="container"><div class="small text-center text-muted">@yangsky013 - 2023</div>

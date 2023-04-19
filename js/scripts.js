@@ -57,3 +57,5 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const remainTime = document.querySelector("#remain-time");

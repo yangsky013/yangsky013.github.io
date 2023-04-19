@@ -692,7 +692,7 @@
         <!-- D-Day Timer -->
         <div class="text-center" style="background-color:#f6f1e6; padding:3rem 0 3rem 0;">
             <h6 class="mt-0" style="color:#696969;"><b>2023년 5월 27일 토요일 오후 2시</b></h6>
-            <h6 class="mt-0" id="remain-time" style="color:#696969;"><b>양하늘 ♥ 김예은</b></h6>
+            <h6 class="mt-0" id="remain-time" style="color:#696969;">양하늘 ♥ 김예은</h6>
         </div>
         <script type="text/javascript">
             function diffDay() {
@@ -705,12 +705,12 @@
                 const diffDay = Math.floor(diff / (1000*60*60*24));
                 
                 if (diffDay>0) {
-                    remainTime.innerText = `양하늘 ♥ 김예은 님의 결혼식이 ${diffDay}일 남았습니다.`;
+                    remainTime.innerText = `양하늘 ♥ 김예은 결혼식 D-${diffDay}`;
                 } else if (diffDay=0) {
-                    remainTime.innerText = `양하늘 ♥ 김예은 님의 결혼식 당일입니다. 함께 축복해 주세요.`;
+                    remainTime.innerText = `양하늘 ♥ 김예은 결혼식 오늘!`;
                 } else {
                     const diffDay_2 = -diffDay;
-                    remainTime.innerText = `양하늘 ♥ 김예은 님의 결혼식이 지났습니다.`;
+                    remainTime.innerText = `양하늘 ♥ 김예은 결혼식 D-${diffDay_2}`;
                 }
             }
             

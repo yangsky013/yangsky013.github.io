@@ -714,8 +714,14 @@
                 }
             }
             
-            diffDay();
-            setInterval(diffDay, 1000);
+            const init = () => {
+                // init 함수 생성해서 getDDay함수 호출하고,
+                diffDay();
+                // setInterval 메서드에서 getDDay함수를 1초(1000밀리초)마다 호출한다.
+                setInterval(getDDay, 1000);
+            }
+
+            init();
         </script>
         <!-- Footer-->
         <footer style="background-color:#f6f1e6; padding:3rem 0 3rem 0;">
